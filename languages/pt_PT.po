@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: understrap\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/understrap\n"
 "POT-Creation-Date: 2021-07-27T23:10:49+00:00\n"
-"PO-Revision-Date: 2021-07-28 02:05+0200\n"
+"PO-Revision-Date: 2021-07-28 09:43+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_PT\n"
@@ -150,7 +150,7 @@ msgstr "Os comentários estão fechados."
 
 #: inc/custom-header.php:54
 msgid "Default Header Image"
-msgstr ""
+msgstr "Imagem de cabeçalho por omissão"
 
 #: inc/customizer.php:42
 msgid "Theme Layout Settings"

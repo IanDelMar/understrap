@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: understrap\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/understrap\n"
 "POT-Creation-Date: 2021-07-27T23:10:49+00:00\n"
-"PO-Revision-Date: 2021-07-28 02:08+0200\n"
+"PO-Revision-Date: 2021-07-28 09:40+0200\n"
 "Last-Translator: idpokute <mike.sayhi@gmail.com>\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
@@ -139,7 +139,7 @@ msgstr "댓글이 닫혀있습니다."
 
 #: inc/custom-header.php:54
 msgid "Default Header Image"
-msgstr ""
+msgstr "기본 헤더 이미지"
 
 #: inc/customizer.php:42
 msgid "Theme Layout Settings"

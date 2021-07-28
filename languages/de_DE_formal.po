@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: understrap\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/understrap\n"
 "POT-Creation-Date: 2021-07-27T23:10:49+00:00\n"
-"PO-Revision-Date: 2021-07-28 02:12+0200\n"
+"PO-Revision-Date: 2021-07-28 09:38+0200\n"
 "Last-Translator: Thomas A. Reinert | TAR MediaDesign <thomas@tarcgn.de>\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -151,7 +151,7 @@ msgstr "Kommentare sind geschlossen."
 
 #: inc/custom-header.php:54
 msgid "Default Header Image"
-msgstr ""
+msgstr "Standard-Header-Bild"
 
 #: inc/customizer.php:42
 msgid "Theme Layout Settings"

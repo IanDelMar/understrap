@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: understrap\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/understrap\n"
-"POT-Creation-Date: 2021-07-27T16:36:12+00:00\n"
-"PO-Revision-Date: 2021-07-28 00:58+0200\n"
+"POT-Creation-Date: 2021-07-27T23:10:49+00:00\n"
+"PO-Revision-Date: 2021-07-28 02:05+0200\n"
 "Last-Translator: Diego Versiani <diegoversiani@gmail.com>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -109,30 +109,18 @@ msgid "Posts by %s"
 msgstr "Posts de %s"
 
 #. translators: %s: post title
-#: comments.php:37
+#: comments.php:36
 msgctxt "comments title"
 msgid "One thought on &ldquo;%s&rdquo;"
 msgstr ""
 
 #. translators: 1: number of comments, 2: post title
-#: comments.php:44
+#: comments.php:43
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
-
-#: comments.php:64 comments.php:99
-msgid "Comment navigation"
-msgstr "Navegação de comentários"
-
-#: comments.php:68 comments.php:103
-msgid "&larr; Older Comments"
-msgstr "&larr; Mais Antigos"
-
-#: comments.php:74 comments.php:109
-msgid "Newer Comments &rarr;"
-msgstr "Mais Novos"
 
 #: header.php:31
 msgid "Skip to content"
@@ -308,6 +296,18 @@ msgstr "% Coment&aacute;rios"
 msgid "Edit %s"
 msgstr "Editar %s"
 
+#: inc/template-tags.php:184
+msgid "Comment navigation"
+msgstr "Navegação de comentários"
+
+#: inc/template-tags.php:188
+msgid "&larr; Older Comments"
+msgstr "&larr; Mais Antigos"
+
+#: inc/template-tags.php:194
+msgid "Newer Comments &rarr;"
+msgstr "Mais Novos"
+
 #: inc/widgets.php:103
 msgid "Right Sidebar"
 msgstr ""
@@ -386,7 +386,7 @@ msgstr ""
 #: loop-templates/content-page.php:29 loop-templates/content-single.php:35
 #: loop-templates/content.php:42
 msgid "Pages:"
-msgstr "P&aacute;ginas"
+msgstr "Páginas:"
 
 #. Template Name of the theme
 msgid "Blank Page Template"
@@ -425,10 +425,10 @@ msgstr "Pesquisar"
 msgid "Search &hellip;"
 msgstr "Pesquisando &hellip;"
 
-#: sidebar-templates/sidebar-hero.php:28 woocommerce/myaccount/orders.php:89
+#: sidebar-templates/sidebar-hero.php:28
 msgid "Previous"
 msgstr ""
 
-#: sidebar-templates/sidebar-hero.php:36 woocommerce/myaccount/orders.php:93
+#: sidebar-templates/sidebar-hero.php:36
 msgid "Next"
 msgstr ""

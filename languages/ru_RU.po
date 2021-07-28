@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: understrap\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/understrap\n"
 "POT-Creation-Date: 2021-07-27T16:36:12+00:00\n"
-"PO-Revision-Date: 2021-07-28 00:59+0200\n"
+"PO-Revision-Date: 2021-07-28 02:03+0200\n"
 "Last-Translator: edkozuto <edkozuto@gmail.com>\n"
 "Language-Team: Русский\n"
 "Language: ru_RU\n"
@@ -387,7 +387,7 @@ msgstr ""
 #: loop-templates/content-page.php:29 loop-templates/content-single.php:35
 #: loop-templates/content.php:42
 msgid "Pages:"
-msgstr "Страницы"
+msgstr "Страницы:"
 
 #. Template Name of the theme
 msgid "Blank Page Template"

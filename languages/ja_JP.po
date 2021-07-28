@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: understrap\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/understrap\n"
-"POT-Creation-Date: 2021-07-27T16:36:12+00:00\n"
-"PO-Revision-Date: 2021-07-28 00:55+0200\n"
+"POT-Creation-Date: 2021-07-27T23:10:49+00:00\n"
+"PO-Revision-Date: 2021-07-28 02:09+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja_JP\n"
@@ -114,29 +114,17 @@ msgid "Posts by %s"
 msgstr "%s の投稿"
 
 #. translators: %s: post title
-#: comments.php:37
+#: comments.php:36
 msgctxt "comments title"
 msgid "One thought on &ldquo;%s&rdquo;"
 msgstr ""
 
 #. translators: 1: number of comments, 2: post title
-#: comments.php:44
+#: comments.php:43
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
-
-#: comments.php:64 comments.php:99
-msgid "Comment navigation"
-msgstr "コメントナビゲーション"
-
-#: comments.php:68 comments.php:103
-msgid "&larr; Older Comments"
-msgstr "&larr; 古いコメント"
-
-#: comments.php:74 comments.php:109
-msgid "Newer Comments &rarr;"
-msgstr "新しいコメント &rarr;"
 
 #: header.php:31
 msgid "Skip to content"
@@ -313,6 +301,18 @@ msgstr "% 件のコメント"
 msgid "Edit %s"
 msgstr "%sを編集"
 
+#: inc/template-tags.php:184
+msgid "Comment navigation"
+msgstr "コメントナビゲーション"
+
+#: inc/template-tags.php:188
+msgid "&larr; Older Comments"
+msgstr "&larr; 古いコメント"
+
+#: inc/template-tags.php:194
+msgid "Newer Comments &rarr;"
+msgstr "新しいコメント &rarr;"
+
 #: inc/widgets.php:103
 msgid "Right Sidebar"
 msgstr "右サイドバー"
@@ -390,7 +390,7 @@ msgstr "お探しのコンテンツは見つかりませんでした。検索を
 #: loop-templates/content-page.php:29 loop-templates/content-single.php:35
 #: loop-templates/content.php:42
 msgid "Pages:"
-msgstr "ページ:"
+msgstr "固定ページ:"
 
 #. Template Name of the theme
 msgid "Blank Page Template"
@@ -429,10 +429,10 @@ msgstr "検索"
 msgid "Search &hellip;"
 msgstr "検索&hellip;"
 
-#: sidebar-templates/sidebar-hero.php:28 woocommerce/myaccount/orders.php:89
+#: sidebar-templates/sidebar-hero.php:28
 msgid "Previous"
 msgstr "前"
 
-#: sidebar-templates/sidebar-hero.php:36 woocommerce/myaccount/orders.php:93
+#: sidebar-templates/sidebar-hero.php:36
 msgid "Next"
 msgstr "次"

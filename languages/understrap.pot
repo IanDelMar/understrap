@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-10-12T15:11:14+00:00\n"
+"POT-Creation-Date: 2022-10-31T16:01:51+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: understrap\n"
@@ -86,20 +86,20 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: global-templates/navbar-collapse-bootstrap4.php:17
-#: global-templates/navbar-collapse-bootstrap5.php:17
-#: global-templates/navbar-offcanvas-bootstrap5.php:17
-msgid "Main Navigation"
+#: global-templates/navbar-collapse-bootstrap4.php:14
+#: global-templates/navbar-collapse-bootstrap5.php:14
+#: global-templates/navbar-offcanvas-bootstrap5.php:14
+msgid "Menu"
 msgstr ""
 
-#: global-templates/navbar-collapse-bootstrap4.php:27
-#: global-templates/navbar-collapse-bootstrap5.php:26
-#: global-templates/navbar-offcanvas-bootstrap5.php:26
+#: global-templates/navbar-collapse-bootstrap4.php:22
+#: global-templates/navbar-collapse-bootstrap5.php:21
+#: global-templates/navbar-offcanvas-bootstrap5.php:21
 msgid "Toggle navigation"
 msgstr ""
 
 #: header.php:32
-msgid "Skip to content"
+msgid "Skip to main content"
 msgstr ""
 
 #: inc/class-wp-bootstrap-navwalker.php:377

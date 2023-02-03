@@ -388,3 +388,35 @@ if ( ! function_exists( 'understrap_get_screen_reader_class' ) ) {
 		return $focusable ? 'visually-hidden-focusable' : 'visually-hidden';
 	}
 }
+
+if ( ! function_exists( 'understrap_read_more_button' ) ) {
+	/**
+	 * Retrieves the HTML markup for the "Read more" button.
+	 *
+	 * @since x.x.x
+	 *
+	 * @return string
+	 */
+	function understrap_read_more_button() {
+		global $post;
+		if ( ! $post instanceof WP_Post ) {
+			return '';
+		}
+
+		return sprintf(
+			'<a class="btn btn-secondary understrap-read-more-link" href="%1$s" aria-label="%2$s">%3$s</a>',
+			esc_url( get_permalink( $post ) ), // @phpstan-ignore-line -- post exists
+			sprintf(
+				/* translators: %s: Post title. */
+				__( 'Read more about %s', 'understrap' ),
+				the_title_attribute( // @phpstan-ignore-line -- we do not echo
+					array(
+						'echo' => false,
+						'post' => $post,
+					)
+				)
+			),
+			__( 'Read More', 'understrap' )
+		);
+	}
+}

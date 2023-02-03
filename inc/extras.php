@@ -88,6 +88,8 @@ if ( ! function_exists( 'understrap_change_logo_class' ) ) {
 	}
 }
 
+add_action( 'wp_head', 'understrap_pingback' );
+
 if ( ! function_exists( 'understrap_pingback' ) ) {
 	/**
 	 * Add a pingback url auto-discovery header for single posts of any post type.
@@ -98,7 +100,8 @@ if ( ! function_exists( 'understrap_pingback' ) ) {
 		}
 	}
 }
-add_action( 'wp_head', 'understrap_pingback' );
+
+add_action( 'wp_head', 'understrap_mobile_web_app_meta' );
 
 if ( ! function_exists( 'understrap_mobile_web_app_meta' ) ) {
 	/**
@@ -110,7 +113,8 @@ if ( ! function_exists( 'understrap_mobile_web_app_meta' ) ) {
 		echo '<meta name="apple-mobile-web-app-title" content="' . esc_attr( get_bloginfo( 'name' ) ) . ' - ' . esc_attr( get_bloginfo( 'description' ) ) . '">' . "\n";
 	}
 }
-add_action( 'wp_head', 'understrap_mobile_web_app_meta' );
+
+add_filter( 'understrap_body_attributes', 'understrap_default_body_attributes' );
 
 if ( ! function_exists( 'understrap_default_body_attributes' ) ) {
 	/**
@@ -125,7 +129,6 @@ if ( ! function_exists( 'understrap_default_body_attributes' ) ) {
 		return $atts;
 	}
 }
-add_filter( 'understrap_body_attributes', 'understrap_default_body_attributes' );
 
 // Escapes all occurances of 'the_archive_description'.
 add_filter( 'get_the_archive_description', 'understrap_escape_the_archive_description' );
@@ -190,6 +193,8 @@ if ( ! function_exists( 'understrap_kses_title' ) ) {
 	}
 } // End of if function_exists( 'understrap_kses_title' ).
 
+add_filter( 'understrap_posted_by', 'understrap_hide_posted_by' );
+
 if ( ! function_exists( 'understrap_hide_posted_by' ) ) {
 	/**
 	 * Hides the posted by markup in `understrap_posted_on()`.
@@ -206,8 +211,6 @@ if ( ! function_exists( 'understrap_hide_posted_by' ) ) {
 		return $byline;
 	}
 }
-add_filter( 'understrap_posted_by', 'understrap_hide_posted_by' );
-
 
 add_filter( 'excerpt_more', 'understrap_custom_excerpt_more' );
 
@@ -238,16 +241,11 @@ if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 	 * @return string
 	 */
 	function understrap_all_excerpts_get_more_link( $post_excerpt ) {
-		if ( is_admin() || ! get_the_ID() ) {
+		if ( is_admin() ) {
 			return $post_excerpt;
 		}
 
-		$permalink = esc_url( get_permalink( (int) get_the_ID() ) ); // @phpstan-ignore-line -- post exists
-
-		return $post_excerpt . ' [...]<p><a class="btn btn-secondary understrap-read-more-link" href="' . $permalink . '">' . __(
-			'Read More...',
-			'understrap'
-		) . '<span class="screen-reader-text"> from ' . get_the_title( get_the_ID() ) . '</span></a></p>';
+		return $post_excerpt . ' [&hellip;]<p>' . understrap_read_more_button() . '</p>';
 
 	}
 }

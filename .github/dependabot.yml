@@ -8,21 +8,23 @@ updates:
     directory: "/"
     labels:
     - "dependencies"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 50
     rebase-strategy: auto
     schedule:
-      interval: "monthly"
+      interval: "daily"
+      time: "05:00"
 
   # Maintain dependencies for npm
   - package-ecosystem: "npm"
     directory: "/"
     labels:
     - "dependencies"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 50
     rebase-strategy: auto
     schedule:
-      interval: "monthly"
-    target-branch: "develop"
+      interval: "daily"
+      time: "05:00"
+    target-branch: "bump-deps"
     versioning-strategy: increase
 
   # Maintain dependencies for Composer
@@ -33,9 +35,10 @@ updates:
     directory: "/"
     labels:
     - "dependencies"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 50
     rebase-strategy: auto
     schedule:
-      interval: "monthly"
-    target-branch: "develop"
+      interval: "daily"
+      time: "05:00"
+    target-branch: "bump-deps"
     versioning-strategy: increase

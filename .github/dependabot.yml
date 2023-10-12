@@ -13,6 +13,7 @@ updates:
     schedule:
       interval: "daily"
       time: "05:00"
+    target-branch: "bump-deps"
 
   # Maintain dependencies for npm
   - package-ecosystem: "npm"

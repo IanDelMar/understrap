@@ -32,12 +32,7 @@ updates:
     target-branch: "main"
     versioning-strategy: increase
     groups:
-      assets:
-        patterns:
-        - "bootstrap*"
-        - "*popper*"
-        - "font-awesome"
-      dev-dependencies:
+      build:
         exclude-patterns:
         - "bootstrap*"
         - "*popper*"

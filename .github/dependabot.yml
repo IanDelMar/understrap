@@ -37,7 +37,7 @@ updates:
           - "bootstrap*"
           - "*popper*"
           - "font-awesome"
-      deps-dev:
+      npm:
         exclude-patterns:
           - "bootstrap*"
           - "*popper*"

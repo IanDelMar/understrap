@@ -32,8 +32,13 @@ updates:
     target-branch: "main"
     versioning-strategy: increase
     groups:
-      development-dependencies:
-        dependency-type: "development"
+      build:
+        patterns:
+        - "*"
+        exclude-patterns:
+        - "bootstrap*"
+        - "*popper*"
+        - "font-awesome"
 
   # Maintain dependencies for Composer
   - package-ecosystem: "composer"

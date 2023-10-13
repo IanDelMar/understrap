@@ -17,7 +17,7 @@ updates:
     groups:
       github-actions:
         patterns:
-          - "*"
+        - "*"
 
   # Maintain dependencies for npm
   - package-ecosystem: "npm"
@@ -34,14 +34,14 @@ updates:
     groups:
       assets:
         patterns:
-          - "bootstrap*"
-          - "*popper*"
-          - "font-awesome"
-      npm:
+        - "bootstrap*"
+        - "*popper*"
+        - "font-awesome"
+      build:
         exclude-patterns:
-          - "bootstrap*"
-          - "*popper*"
-          - "font-awesome"
+        - "bootstrap*"
+        - "*popper*"
+        - "font-awesome"
 
   # Maintain dependencies for Composer
   - package-ecosystem: "composer"
@@ -61,4 +61,4 @@ updates:
     groups:
       composer:
         patterns:
-          - "*"
+        - "*"

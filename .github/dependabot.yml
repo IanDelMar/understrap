@@ -14,6 +14,10 @@ updates:
       interval: "daily"
       time: "05:00"
     target-branch: "bump-deps"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
 
   # Maintain dependencies for npm
   - package-ecosystem: "npm"
@@ -27,6 +31,17 @@ updates:
       time: "05:00"
     target-branch: "bump-deps"
     versioning-strategy: increase
+    groups:
+      assets:
+        patterns:
+          - "bootstrap*"
+          - "popper"
+          - "font-awesome"
+      build:
+        exclude-patterns:
+          - "bootstrap*"
+          - "popper"
+          - "font-awesome"
 
   # Maintain dependencies for Composer
   - package-ecosystem: "composer"
@@ -43,3 +58,7 @@ updates:
       time: "05:00"
     target-branch: "bump-deps"
     versioning-strategy: increase
+    groups:
+      composer:
+        patterns:
+          - "*"

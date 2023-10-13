@@ -32,12 +32,12 @@ updates:
     target-branch: "main"
     versioning-strategy: increase
     groups:
-      assets:
+      npm-assets:
         patterns:
         - "bootstrap*"
         - "*popper*"
         - "font-awesome"
-      build:
+      npm-build:
         patterns:
         - "*"
         exclude-patterns:

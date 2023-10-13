@@ -32,7 +32,7 @@ updates:
     target-branch: "main"
     versioning-strategy: increase
     groups:
-      build:
+      marian:
         exclude-patterns:
         - "bootstrap*"
         - "*popper*"

@@ -37,7 +37,7 @@ updates:
         - "bootstrap*"
         - "*popper*"
         - "font-awesome"
-      build:
+      dev-dependencies:
         exclude-patterns:
         - "bootstrap*"
         - "*popper*"

@@ -13,7 +13,7 @@ updates:
     schedule:
       interval: "daily"
       time: "05:00"
-    target-branch: "bump-deps"
+    target-branch: "main"
     groups:
       github-actions:
         patterns:
@@ -29,7 +29,7 @@ updates:
     schedule:
       interval: "daily"
       time: "05:00"
-    target-branch: "bump-deps"
+    target-branch: "main"
     versioning-strategy: increase
     groups:
       assets:
@@ -56,7 +56,7 @@ updates:
     schedule:
       interval: "daily"
       time: "05:00"
-    target-branch: "bump-deps"
+    target-branch: "main"
     versioning-strategy: increase
     groups:
       composer:

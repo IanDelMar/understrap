@@ -35,12 +35,12 @@ updates:
       assets:
         patterns:
           - "bootstrap*"
-          - "popper"
+          - "*popper*"
           - "font-awesome"
       build:
         exclude-patterns:
           - "bootstrap*"
-          - "popper"
+          - "*popper*"
           - "font-awesome"
 
   # Maintain dependencies for Composer
